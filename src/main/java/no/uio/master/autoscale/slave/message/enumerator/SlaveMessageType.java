@@ -1,4 +1,4 @@
-package no.uio.master.autoscale.model.enumerator;
+package no.uio.master.autoscale.slave.message.enumerator;
 
 
 public enum SlaveMessageType {

@@ -1,9 +1,9 @@
-package no.uio.master.autoscale.model;
+package no.uio.master.autoscale.slave.message;
 
 import java.io.Serializable;
 import java.util.HashMap;
 
-import no.uio.master.autoscale.model.enumerator.SlaveMessageType;
+import no.uio.master.autoscale.slave.message.enumerator.SlaveMessageType;
 
 
 public class SlaveMessage implements Serializable {
