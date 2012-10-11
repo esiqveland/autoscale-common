@@ -1,19 +1,22 @@
-package no.uio.master.autoscale.slave.message;
+ package no.uio.master.autoscale.slave.message;
 
 import java.io.Serializable;
 
 import no.uio.master.autoscale.slave.message.enumerator.BreachType;
 
-public class BreachMessage<T> implements Serializable {
+public class BreachMessage<T> extends Message implements Serializable {
 
 	private static final long serialVersionUID = -9056720711721903877L;
 	private BreachType type;
 	private T value;
 	
-	public BreachMessage() {
+	@SuppressWarnings("unused")
+	private BreachMessage() {
+		super();
 	}
 
 	public BreachMessage(BreachType t, T v) {
+		super();
 		type = t;
 		value = v;
 	}
@@ -65,7 +68,7 @@ public class BreachMessage<T> implements Serializable {
 
 	@Override
 	public String toString() {
-		return "BreachMessage [type=" + type + ", value=" + value + "]";
+		return "BreachMessage [type=" + type + ", value=" + value +", senderIp=" + this.getSenderIp() + "]";
 	}
 
 }

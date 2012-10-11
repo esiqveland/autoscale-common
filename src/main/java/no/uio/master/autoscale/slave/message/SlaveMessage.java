@@ -6,7 +6,7 @@ import java.util.HashMap;
 import no.uio.master.autoscale.slave.message.enumerator.SlaveMessageType;
 
 
-public class SlaveMessage implements Serializable {
+public class SlaveMessage extends Message implements Serializable {
 	private static final long serialVersionUID = 382125954042009372L;
 
 	
@@ -14,11 +14,13 @@ public class SlaveMessage implements Serializable {
 	private HashMap<String, Object> map;
 	
 	public SlaveMessage() {
+		super();
 		type = SlaveMessageType.INITIALIZATION;
 		map = new HashMap<String, Object>();
 	}
 	
 	public SlaveMessage(SlaveMessageType type) {
+		super();
 		this.type = type;
 		map = new HashMap<String, Object>();
 	}
@@ -45,6 +47,6 @@ public class SlaveMessage implements Serializable {
 
 	@Override
 	public String toString() {
-		return "SlaveMessage [type=" + type + ", map=" + map + "]";
+		return "SlaveMessage [type=" + type + ", map=" + map +", senderIp=" + this.getSenderIp() + "]";
 	}
 }
