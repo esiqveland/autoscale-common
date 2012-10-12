@@ -70,7 +70,7 @@ public class Communicator {
 		initServerSocketIfNotActive();
 		Object msg = null;
 		try {
-			LOG.debug("Waiting for incomming connections...");
+			LOG.debug("Waiting for incoming connections...");
 			socket = serverSocket.accept();
 			
 			LOG.debug("Reading message");
