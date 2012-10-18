@@ -12,27 +12,27 @@ import java.io.Serializable;
 public abstract class Message implements Serializable {
 
 	private static final long serialVersionUID = -9156910154465325184L;
-	private String senderIp;
+	private String senderHost;
 	
 	public Message() {
-		String ip = "127.0.0.1";
+		String host = "127.0.0.1";
 		//TODO: Remove this later, to retrieve the actual ip-address
 //		try {
 //			InetAddress ownIp=InetAddress.getLocalHost();
-//			ip = ownIp.getHostAddress();
+//			host = ownIp.getHostAddress();
 //		} catch (UnknownHostException e1) {
 //			LOG.debug("Failed to retrieve ip");
 //		}
-		senderIp = ip;
+		senderHost = host;
 	}
 	
-	public String getSenderIp() {
-		return this.senderIp;
+	public String getSenderHost() {
+		return this.senderHost;
 	}
 
 	@Override
 	public String toString() {
-		return "Message [senderIp=" + senderIp + "]";
+		return "Message [senderHost=" + senderHost + "]";
 	}
 
 }

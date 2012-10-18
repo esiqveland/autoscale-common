@@ -47,6 +47,6 @@ public class SlaveMessage extends Message implements Serializable {
 
 	@Override
 	public String toString() {
-		return "SlaveMessage [type=" + type + ", map=" + map +", senderIp=" + this.getSenderIp() + "]";
+		return "SlaveMessage [type=" + type + ", map=" + map +", senderIp=" + this.getSenderHost() + "]";
 	}
 }

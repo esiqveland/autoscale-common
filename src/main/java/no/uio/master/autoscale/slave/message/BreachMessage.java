@@ -68,7 +68,7 @@ public class BreachMessage<T> extends Message implements Serializable {
 
 	@Override
 	public String toString() {
-		return "BreachMessage [type=" + type + ", value=" + value +", senderIp=" + this.getSenderIp() + "]";
+		return "BreachMessage [type=" + type + ", value=" + value +", senderIp=" + this.getSenderHost() + "]";
 	}
 
 }
