@@ -26,6 +26,15 @@ public abstract class Message implements Serializable {
 		senderHost = host;
 	}
 	
+	/**
+	 * Constructor handles this automatically.<br>
+	 * Should only be used for testing purposes!
+	 * @param host
+	 */
+	public void setSenderHost(String host) {
+		this.senderHost = host;
+	}
+	
 	public String getSenderHost() {
 		return this.senderHost;
 	}
