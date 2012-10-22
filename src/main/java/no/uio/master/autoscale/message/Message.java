@@ -1,4 +1,4 @@
-package no.uio.master.autoscale.slave.message;
+package no.uio.master.autoscale.message;
 
 import java.io.Serializable;
 
@@ -26,10 +26,19 @@ public abstract class Message implements Serializable {
 		senderHost = host;
 	}
 	
+	/**
+	 * Constructor handles the senderHost automatically, this method 
+	 * is only intended for testing-purposes.
+	 * @param host
+	 */
+	public void setSenderHost(String host) {
+		this.senderHost = host;
+	}
+	
 	public String getSenderHost() {
 		return this.senderHost;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Message [senderHost=" + senderHost + "]";
