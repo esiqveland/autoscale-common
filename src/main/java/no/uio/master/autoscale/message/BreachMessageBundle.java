@@ -1,4 +1,4 @@
-package no.uio.master.autoscale.slave.message;
+package no.uio.master.autoscale.message;
 
 import java.io.Serializable;
 import java.util.ArrayList;

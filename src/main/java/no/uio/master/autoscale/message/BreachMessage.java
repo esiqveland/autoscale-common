@@ -1,14 +1,16 @@
- package no.uio.master.autoscale.slave.message;
+ package no.uio.master.autoscale.message;
 
 import java.io.Serializable;
+import java.util.Date;
 
-import no.uio.master.autoscale.slave.message.enumerator.BreachType;
+import no.uio.master.autoscale.message.enumerator.BreachType;
 
 public class BreachMessage<T> extends Message implements Serializable {
 
 	private static final long serialVersionUID = -9056720711721903877L;
 	private BreachType type;
 	private T value;
+	private Date date;
 	
 	@SuppressWarnings("unused")
 	private BreachMessage() {
@@ -37,6 +39,15 @@ public class BreachMessage<T> extends Message implements Serializable {
 		this.value = value;
 	}
 	
+	
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

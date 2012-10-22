@@ -1,4 +1,4 @@
-package no.uio.master.autoscale.slave.net;
+package no.uio.master.autoscale.net;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
