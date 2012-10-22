@@ -1,4 +1,4 @@
-package no.uio.master.autoscale.message.enumerator;
+package no.uio.master.autoscale.slave.message.enumerator;
 
 public enum BreachType {
 	MAX_MEMORY_USAGE,
