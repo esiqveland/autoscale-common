@@ -44,7 +44,7 @@ public class Communicator {
 		try {
 			this.socket = new Socket(host,output_port);
 		} catch (IOException e) {
-			LOG.error("Failed to init connection with ");
+			LOG.error("Failed to init connection with " + host);
 		}
 	}
 
@@ -78,7 +78,7 @@ public class Communicator {
 			msg = inputStream.readObject();
 			LOG.debug("Read message");
 		} catch (Exception e) {
-			LOG.error("Failed to read message",e);
+			LOG.error("Failed to read message");
 		}
 		
 		return msg;
@@ -97,13 +97,13 @@ public class Communicator {
 			outputStream.writeObject(obj);
 			outputStream.flush();
 			LOG.debug("Message sent");
-		} catch (IOException e) {
-			LOG.error("Failed to send message",e);
+		} catch (Exception e) {
+			LOG.error("Failed to send message");
 		} finally {
 			try {
 				outputStream.close();
 				socket.close();
-			} catch (IOException e) {
+			} catch (Exception e) {
 				LOG.error("Failed to close output-stream");
 			}
 		}
