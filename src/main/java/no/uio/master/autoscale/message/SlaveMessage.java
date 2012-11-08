@@ -6,7 +6,7 @@ import java.util.HashMap;
 import no.uio.master.autoscale.message.enumerator.SlaveMessageType;
 
 
-public class SlaveMessage extends Message implements Serializable {
+public class SlaveMessage extends AbstractMessage implements Serializable {
 	private static final long serialVersionUID = 382125954042009372L;
 
 	

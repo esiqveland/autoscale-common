@@ -5,7 +5,7 @@ import java.util.Date;
 
 import no.uio.master.autoscale.message.enumerator.BreachType;
 
-public class BreachMessage<T> extends Message implements Serializable {
+public class BreachMessage<T> extends AbstractMessage implements Serializable {
 
 	private static final long serialVersionUID = -9056720711721903877L;
 	private BreachType type;

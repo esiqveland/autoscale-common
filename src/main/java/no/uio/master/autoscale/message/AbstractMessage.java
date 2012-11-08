@@ -9,12 +9,12 @@ import java.io.Serializable;
  * 
  * @author andreas
  */
-public abstract class Message implements Serializable {
+public abstract class AbstractMessage implements Serializable {
 
 	private static final long serialVersionUID = -9156910154465325184L;
 	private String senderHost;
 	
-	public Message() {
+	public AbstractMessage() {
 		String host = "127.0.0.1";
 		//TODO: Remove this later, to retrieve the actual ip-address
 //		try {

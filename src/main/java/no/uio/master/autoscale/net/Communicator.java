@@ -73,7 +73,6 @@ public class Communicator {
 			LOG.debug("Waiting for incoming connections...");
 			socket = serverSocket.accept();
 			
-			LOG.debug("Reading message");
 			inputStream = new ObjectInputStream(socket.getInputStream());
 			msg = inputStream.readObject();
 			LOG.debug("Read message");
