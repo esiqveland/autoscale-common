@@ -3,33 +3,33 @@ package no.uio.master.autoscale.message;
 import java.io.Serializable;
 import java.util.HashMap;
 
-import no.uio.master.autoscale.message.enumerator.SlaveMessageType;
+import no.uio.master.autoscale.message.enumerator.AgentMessageType;
 
 
-public class SlaveMessage extends AbstractMessage implements Serializable {
+public class AgentMessage extends AbstractMessage implements Serializable {
 	private static final long serialVersionUID = 382125954042009372L;
 
 	
-	private SlaveMessageType type;
+	private AgentMessageType type;
 	private HashMap<String, Object> map;
 	
-	public SlaveMessage() {
+	public AgentMessage() {
 		super();
-		type = SlaveMessageType.INITIALIZATION;
+		type = AgentMessageType.STARTUP_NODE;
 		map = new HashMap<String, Object>();
 	}
 	
-	public SlaveMessage(SlaveMessageType type) {
+	public AgentMessage(AgentMessageType type) {
 		super();
 		this.type = type;
 		map = new HashMap<String, Object>();
 	}
 
-	public SlaveMessageType getType() {
+	public AgentMessageType getType() {
 		return type;
 	}
 
-	public void setType(SlaveMessageType type) {
+	public void setType(AgentMessageType type) {
 		this.type = type;
 	}
 
