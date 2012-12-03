@@ -47,6 +47,6 @@ public class AgentMessage extends AbstractMessage implements Serializable {
 
 	@Override
 	public String toString() {
-		return "SlaveMessage [type=" + type + ", map=" + map +", senderIp=" + this.getSenderHost() + "]";
+		return "AgentMessage [type=" + type + ", map=" + map +", senderIp=" + this.getSenderHost() + "]";
 	}
 }
