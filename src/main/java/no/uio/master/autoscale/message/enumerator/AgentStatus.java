@@ -7,5 +7,8 @@ package no.uio.master.autoscale.message.enumerator;
  */
 public enum AgentStatus {
 
+	/**
+	 * Retrieve live nodes
+	 */
 	LIVE_NODES;
 }

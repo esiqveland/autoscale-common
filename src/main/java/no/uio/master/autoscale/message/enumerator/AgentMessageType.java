@@ -4,7 +4,7 @@ package no.uio.master.autoscale.message.enumerator;
 public enum AgentMessageType {
 	
 	/**
-	 * Initialize Cassandra-node.<br>
+	 * Initialize node.<br>
 	 * Update configurations from message<br>
 	 * Start agent.
 	 */
@@ -26,15 +26,17 @@ public enum AgentMessageType {
 	START_AGENT,
 	
 	/**
-	 * Decomission node, and shut down Cassandra-process
+	 * Decomission node, and shut down system-process
 	 */
 	SHUTDOWN_NODE,
+	
 	/**
 	 * Get status for given criteria .<br>
 	 * @see Status-enumerator must be sent together with the message
 	 * {@link no.uio.master.autoscale.message.enumerator.AgentStatus}
 	 */
 	STATUS,
+	
 	/**
 	 * A breach occurred
 	 */

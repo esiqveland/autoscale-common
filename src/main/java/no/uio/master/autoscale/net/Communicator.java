@@ -58,7 +58,7 @@ public class Communicator {
 		try {
 			this.serverSocket = new ServerSocket(input_port);
 		} catch (IOException e) {
-			LOG.error("Failed to initialize server-socket");
+			LOG.error("Failed to initialize server-socket",e);
 		}
 	}
 	
@@ -77,7 +77,7 @@ public class Communicator {
 			msg = inputStream.readObject();
 			LOG.debug("Read message");
 		} catch (Exception e) {
-			LOG.error("Failed to read message");
+			LOG.error("Failed to read message",e);
 		}
 		
 		return msg;
@@ -97,7 +97,7 @@ public class Communicator {
 			outputStream.flush();
 			LOG.debug("Message sent");
 		} catch (Exception e) {
-			LOG.error("Failed to send message");
+			LOG.error("Failed to send message",e);
 		} finally {
 			try {
 				outputStream.close();
