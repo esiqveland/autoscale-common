@@ -21,7 +21,7 @@ public abstract class AbstractMessage implements Serializable {
 	private String senderHost;
 	
 	public AbstractMessage() {
-		String host = "127.0.0.1";
+		String host = "";
 
 		try {
 			InetAddress ownIp=InetAddress.getLocalHost();
