@@ -44,7 +44,7 @@ public class Communicator {
 		try {
 			this.socket = new Socket(host,output_port);
 		} catch (IOException e) {
-			LOG.error("Failed to init connection with " + host);
+			LOG.error("Failed to init connection with " + host,e);
 		}
 	}
 
