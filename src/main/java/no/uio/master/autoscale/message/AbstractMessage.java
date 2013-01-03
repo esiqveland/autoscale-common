@@ -9,33 +9,23 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Abstraction for messages sent. <br>
- * All messages should contain the senders ip-address for internal mapping 
- * at the receiver.
+ * All messages should contain the senders ip address for internal mapping, and the senders ip 
+ * address should be read after fetching the object at the receiver-side, since the ip address 
+ * provided by the InetAddress interface may be an internal address behind a router, e.g., 
+ * 192.168.0.10, and therefore not directly accessible. 
  * 
  * @author andreas
  */
 public abstract class AbstractMessage implements Serializable {
-	private static Logger LOG = LoggerFactory.getLogger(AbstractMessage.class);
 
 	private static final long serialVersionUID = -9156910154465325184L;
 	private String senderHost;
 	
 	public AbstractMessage() {
-		String host = "";
-
-		try {
-			InetAddress ownIp=InetAddress.getLocalHost();
-			host = ownIp.getHostAddress();
-		} catch (UnknownHostException e1) {
-			LOG.debug("Failed to retrieve ip");
-		}
-		
-		senderHost = host;
 	}
 	
 	/**
-	 * Constructor handles this automatically.<br>
-	 * Should only be used for testing purposes!
+	 * Set sender-host addres / ip address.<br>
 	 * @param host
 	 */
 	public void setSenderHost(String host) {

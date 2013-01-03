@@ -6,6 +6,8 @@ import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import no.uio.master.autoscale.util.CommunicatorObjectBundle;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -66,21 +68,27 @@ public class Communicator {
 	 * Start listening for <tt>incoming_port</tt>, and waits for incoming messages
 	 * @return
 	 */
-	public Object readMessage() {
+	public CommunicatorObjectBundle readMessage() {
 		initServerSocketIfNotActive();
-		Object msg = null;
+		CommunicatorObjectBundle obj = new CommunicatorObjectBundle();
+
 		try {
 			LOG.debug("Waiting for incoming connections...");
 			socket = serverSocket.accept();
-			
-			inputStream = new ObjectInputStream(socket.getInputStream());
-			msg = inputStream.readObject();
-			LOG.debug("Read message");
+			if(null != socket) {
+				inputStream = new ObjectInputStream(socket.getInputStream());
+				obj.setMessage(inputStream.readObject());
+				obj.setSenderIp(socket.getInetAddress().getHostAddress());
+				
+				LOG.debug("Read message");
+			} else {
+				LOG.error("Could not initialize socket.");
+			}
 		} catch (Exception e) {
-			LOG.error("Failed to read message",e);
+			LOG.error("Failed to read message ",e);
 		}
 		
-		return msg;
+		return obj;
 	}
 	
 	/**
