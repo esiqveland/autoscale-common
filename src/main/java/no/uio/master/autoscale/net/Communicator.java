@@ -5,6 +5,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.SocketImpl;
 
 import no.uio.master.autoscale.util.CommunicatorObjectBundle;
 
@@ -20,8 +21,8 @@ public class Communicator {
 	private static ObjectOutputStream outputStream;
 	private static ObjectInputStream inputStream;
 	
-	private Socket socket;
-	private ServerSocket serverSocket;
+	private static Socket socket;
+	private static ServerSocket serverSocket;
 	
 	private Integer input_port;
 	private Integer output_port;
@@ -46,7 +47,7 @@ public class Communicator {
 		try {
 			this.socket = new Socket(host,output_port);
 		} catch (IOException e) {
-			LOG.error("Failed to init connection with " + host,e);
+			LOG.error("Failed to init connection with " + host,e.getMessage());
 		}
 	}
 
@@ -60,7 +61,7 @@ public class Communicator {
 		try {
 			this.serverSocket = new ServerSocket(input_port);
 		} catch (IOException e) {
-			LOG.error("Failed to initialize server-socket",e);
+			LOG.error("Failed to initialize server-socket",e.getMessage());
 		}
 	}
 	
@@ -85,7 +86,23 @@ public class Communicator {
 				LOG.error("Could not initialize socket.");
 			}
 		} catch (Exception e) {
-			LOG.error("Failed to read message ",e);
+			LOG.error("Failed to read message ",e.getMessage());
+		} finally {
+			try {
+				if(null != inputStream) {
+					inputStream.close();
+				}
+				
+				if(null != serverSocket) {
+					serverSocket.close();
+				}
+				
+				if(null != socket) {
+					socket.close();
+				}
+			} catch (IOException e) {
+				LOG.error("Failed to close input stream and/or server socket ",e.getMessage());
+			}
 		}
 		
 		return obj;
@@ -105,7 +122,7 @@ public class Communicator {
 			outputStream.flush();
 			LOG.debug("Message sent");
 		} catch (Exception e) {
-			LOG.error("Failed to send message",e);
+			LOG.error("Failed to send message",e.getMessage());
 		} finally {
 			try {
 				outputStream.close();
