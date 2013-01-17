@@ -1,0 +1,169 @@
+2013-01-17 11:47:28 Communicator [DEBUG] Initialize serversocket listening at port [7799]
+2013-01-17 11:47:28 Communicator [DEBUG] Waiting for incoming connections...
+2013-01-17 11:47:48 Communicator [DEBUG] Sending message
+2013-01-17 11:47:48 Communicator [DEBUG] Initialize socket [127.0.0.1:7798]
+2013-01-17 11:47:48 Communicator [ERROR] Failed to init connection with 127.0.0.1
+2013-01-17 11:47:48 Communicator [ERROR] Failed to send message
+2013-01-17 11:47:48 Communicator [ERROR] Failed to close output-stream
+2013-01-17 11:47:48 Communicator [DEBUG] Initialize serversocket listening at port [7799]
+2013-01-17 11:47:48 Communicator [ERROR] Failed to initialize server-socket
+2013-01-17 11:47:48 Communicator [DEBUG] Waiting for incoming connections...
+2013-01-17 11:47:48 Communicator [ERROR] Failed to read message 
+2013-01-17 11:53:48 Communicator [DEBUG] Sending message
+2013-01-17 11:53:48 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:53:48 Communicator [DEBUG] Initialize serversocket listening at port [7799]
+2013-01-17 11:53:48 Communicator [ERROR] Failed to initialize server-socket
+2013-01-17 11:53:48 Communicator [DEBUG] Waiting for incoming connections...
+2013-01-17 11:53:48 Communicator [ERROR] Failed to read message 
+2013-01-17 11:53:48 Communicator [ERROR] Failed to read message 
+2013-01-17 11:53:48 Communicator [DEBUG] Sending message
+2013-01-17 11:53:48 Communicator [DEBUG] Initialize socket [127.0.0.1:7798]
+2013-01-17 11:53:48 Communicator [ERROR] Failed to init connection with 127.0.0.1
+2013-01-17 11:53:48 Communicator [ERROR] Failed to send message
+2013-01-17 11:53:48 Communicator [ERROR] Failed to close output-stream
+2013-01-17 11:53:48 Communicator [ERROR] Failed to send message
+2013-01-17 11:53:48 Communicator [ERROR] Failed to close output-stream
+2013-01-17 11:54:48 Communicator [DEBUG] Initialize serversocket listening at port [7799]
+2013-01-17 11:54:48 Communicator [DEBUG] Waiting for incoming connections...
+2013-01-17 11:54:50 Communicator [DEBUG] Sending message
+2013-01-17 11:54:50 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:54:50 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:54:50 Communicator [ERROR] Failed to read message 
+2013-01-17 11:55:11 Communicator [DEBUG] Initialize serversocket listening at port [7799]
+2013-01-17 11:55:11 Communicator [DEBUG] Waiting for incoming connections...
+2013-01-17 11:55:13 Communicator [DEBUG] Sending message
+2013-01-17 11:55:13 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:55:13 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:55:13 Communicator [ERROR] Failed to read message 
+2013-01-17 11:55:44 Communicator [DEBUG] Initialize serversocket listening at port [7799]
+2013-01-17 11:55:44 Communicator [DEBUG] Waiting for incoming connections...
+2013-01-17 11:55:46 Communicator [DEBUG] Sending message
+2013-01-17 11:55:46 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:55:46 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:55:48 Communicator [DEBUG] Sending message
+2013-01-17 11:55:48 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:55:48 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:55:50 Communicator [DEBUG] Sending message
+2013-01-17 11:55:50 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:55:50 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:55:52 Communicator [DEBUG] Sending message
+2013-01-17 11:55:52 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:55:52 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:55:54 Communicator [DEBUG] Sending message
+2013-01-17 11:55:54 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:55:54 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:55:56 Communicator [DEBUG] Sending message
+2013-01-17 11:55:56 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:55:56 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:55:56 Communicator [ERROR] Failed to read message 
+2013-01-17 11:57:32 Communicator [DEBUG] Initialize serversocket listening at port [7799]
+2013-01-17 11:57:32 Communicator [DEBUG] Waiting for incoming connections...
+2013-01-17 11:57:34 Communicator [DEBUG] Sending message
+2013-01-17 11:57:34 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:57:34 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:57:36 Communicator [DEBUG] Sending message
+2013-01-17 11:57:36 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:57:36 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:57:38 Communicator [DEBUG] Sending message
+2013-01-17 11:57:38 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:57:38 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:57:40 Communicator [DEBUG] Sending message
+2013-01-17 11:57:40 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:57:40 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:57:42 Communicator [DEBUG] Sending message
+2013-01-17 11:57:42 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:57:42 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:57:44 Communicator [DEBUG] Sending message
+2013-01-17 11:57:44 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:57:44 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:57:46 Communicator [DEBUG] Sending message
+2013-01-17 11:57:46 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:57:46 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:57:48 Communicator [DEBUG] Sending message
+2013-01-17 11:57:48 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:57:48 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:57:50 Communicator [DEBUG] Sending message
+2013-01-17 11:57:50 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:57:50 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:57:52 Communicator [ERROR] Failed to read message 
+2013-01-17 11:59:37 Communicator [DEBUG] Initialize serversocket listening at port [7799]
+2013-01-17 11:59:37 Communicator [DEBUG] Waiting for incoming connections...
+2013-01-17 11:59:39 Communicator [DEBUG] Sending message
+2013-01-17 11:59:39 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:59:39 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:59:41 Communicator [DEBUG] Sending message
+2013-01-17 11:59:41 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:59:41 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:59:43 Communicator [DEBUG] Sending message
+2013-01-17 11:59:43 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:59:43 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:59:45 Communicator [DEBUG] Sending message
+2013-01-17 11:59:45 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:59:45 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:59:47 Communicator [DEBUG] Sending message
+2013-01-17 11:59:47 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:59:47 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:59:49 Communicator [DEBUG] Sending message
+2013-01-17 11:59:49 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:59:49 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:59:51 Communicator [DEBUG] Sending message
+2013-01-17 11:59:51 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:59:51 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:59:53 Communicator [DEBUG] Sending message
+2013-01-17 11:59:53 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:59:53 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:59:55 Communicator [DEBUG] Sending message
+2013-01-17 11:59:55 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:59:55 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:59:57 Communicator [DEBUG] Sending message
+2013-01-17 11:59:57 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:59:57 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 11:59:59 Communicator [DEBUG] Sending message
+2013-01-17 11:59:59 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 11:59:59 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 12:00:01 Communicator [DEBUG] Sending message
+2013-01-17 12:00:01 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 12:00:01 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 12:00:03 Communicator [DEBUG] Sending message
+2013-01-17 12:00:03 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 12:00:03 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 12:00:05 Communicator [DEBUG] Sending message
+2013-01-17 12:00:05 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 12:00:05 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 12:00:07 Communicator [DEBUG] Sending message
+2013-01-17 12:00:07 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 12:00:07 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 12:00:09 Communicator [DEBUG] Sending message
+2013-01-17 12:00:09 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 12:00:09 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 12:00:11 Communicator [DEBUG] Sending message
+2013-01-17 12:00:11 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 12:00:11 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 12:00:13 Communicator [DEBUG] Sending message
+2013-01-17 12:00:13 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 12:00:13 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 12:00:15 Communicator [DEBUG] Sending message
+2013-01-17 12:00:15 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 12:00:15 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 12:00:17 Communicator [DEBUG] Sending message
+2013-01-17 12:00:17 Communicator [DEBUG] Initialize socket [127.0.0.1:7799]
+2013-01-17 12:00:17 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 12:00:19 Communicator [ERROR] Failed to read message 
+2013-01-17 12:00:39 Communicator [DEBUG] Initialize serversocket listening at port [7799]
+2013-01-17 12:00:39 Communicator [DEBUG] Waiting for incoming connections...
+2013-01-17 12:00:41 Communicator [DEBUG] Sending message
+2013-01-17 12:00:41 Communicator [DEBUG] Initialize socket [localhost:7799]
+2013-01-17 12:00:41 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 12:00:41 Communicator [ERROR] Failed to read message 
+2013-01-17 12:01:02 Communicator [DEBUG] Initialize serversocket listening at port [7799]
+2013-01-17 12:01:02 Communicator [DEBUG] Waiting for incoming connections...
+2013-01-17 12:01:04 Communicator [DEBUG] Sending message
+2013-01-17 12:01:04 Communicator [DEBUG] Initialize socket [localhost:7799]
+2013-01-17 12:01:04 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 12:01:04 Communicator [ERROR] Failed to read message 
+2013-01-17 12:02:03 Communicator [DEBUG] Initialize serversocket listening at port [7799]
+2013-01-17 12:02:03 Communicator [DEBUG] Waiting for incoming connections...
+2013-01-17 12:02:05 Communicator [DEBUG] Sending message
+2013-01-17 12:02:05 Communicator [DEBUG] Initialize socket [0.0.0.0:7799]
+2013-01-17 12:02:05 Communicator [DEBUG] Message sent: AgentMessage [type=STARTUP_NODE, map={test=3}, senderIp=null]
+2013-01-17 12:02:05 Communicator [ERROR] Failed to read message 

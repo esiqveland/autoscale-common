@@ -5,7 +5,6 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.SocketImpl;
 
 import no.uio.master.autoscale.util.CommunicatorObjectBundle;
 
@@ -81,7 +80,6 @@ public class Communicator {
 				obj.setMessage(inputStream.readObject());
 				obj.setSenderIp(socket.getInetAddress().getHostAddress());
 				
-				LOG.debug("Read message");
 			} else {
 				LOG.error("Could not initialize socket.");
 			}
@@ -120,7 +118,7 @@ public class Communicator {
 			outputStream = new ObjectOutputStream(socket.getOutputStream());
 			outputStream.writeObject(obj);
 			outputStream.flush();
-			LOG.debug("Message sent");
+			LOG.debug("Message sent: {}",obj);
 		} catch (Exception e) {
 			LOG.error("Failed to send message",e.getMessage());
 		} finally {
