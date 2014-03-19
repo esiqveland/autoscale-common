@@ -46,7 +46,7 @@ public class Communicator {
 		try {
 			this.socket = new Socket(host,output_port);
 		} catch (IOException e) {
-			LOG.error("Failed to init connection with " + host,e.getMessage());
+			LOG.error("Failed to init connection with " + host, e);
 		}
 	}
 
@@ -56,15 +56,15 @@ public class Communicator {
 	 * @param port
 	 */
 	private void initializeServerSocket() {
-		LOG.debug("Initialize serversocket listening at port ["+input_port+"]");
-		try {
-			this.serverSocket = new ServerSocket(input_port);
-		} catch (IOException e) {
-			LOG.error("Failed to initialize server-socket",e.getMessage());
-		}
-	}
-	
-	/**
+        LOG.debug("Initialize serversocket listening at port [" + input_port + "]");
+        try {
+            this.serverSocket = new ServerSocket(input_port);
+        } catch (IOException e) {
+            LOG.error("Failed to initialize server-socket ", e);
+        }
+    }
+
+    /**
 	 * Start listening for <tt>incoming_port</tt>, and waits for incoming messages
 	 * @return
 	 */
@@ -84,8 +84,8 @@ public class Communicator {
 				LOG.error("Could not initialize socket.");
 			}
 		} catch (Exception e) {
-			LOG.error("Failed to read message ",e.getMessage());
-		} finally {
+            LOG.error("Failed to read message ", e);
+        } finally {
 			try {
 				if(null != inputStream) {
 					inputStream.close();
@@ -99,9 +99,9 @@ public class Communicator {
 					socket.close();
 				}
 			} catch (IOException e) {
-				LOG.error("Failed to close input stream and/or server socket ",e.getMessage());
-			}
-		}
+                LOG.error("Failed to close input stream and/or server socket ", e);
+            }
+        }
 		
 		return obj;
 	}
@@ -120,8 +120,8 @@ public class Communicator {
 			outputStream.flush();
 			LOG.debug("Message sent: {}",obj);
 		} catch (Exception e) {
-			LOG.error("Failed to send message",e.getMessage());
-		} finally {
+            LOG.error("Failed to send message", e);
+        } finally {
 			try {
 				outputStream.close();
 				socket.close();
